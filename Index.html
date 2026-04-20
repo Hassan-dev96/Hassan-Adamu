@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my first website</title>
+    <style>
+      .dark {
+        background: black;
+        color: white;
+        
+      }
+      .bt {
+        background: black;
+        border:1px solid blue;
+        border-radius: 20px;
+        height:25px;
+        color:white;
+      }
+      .b {
+        background:silver;
+        border:1px solid white;
+        border-radius:20px;
+        height:25px;
+      }
+      .l {
+        background: white;
+        color:gray;
+        border:1px solid lightgray;
+        border-radius:25px;
+        height:25px;
+      }
+      .has {
+        background: silver;
+        
+      }
+      .iv {
+        border:2px solid lightblue;
+        border-radius:20px;
+       overflow-y: scroll;
+       height:400px;
+      }
+      .di {
+       border:2px solid black;
+        border-radius:20px;
+       overflow-y: scroll;
+       height:397px;
+      }
+      h1 {
+        background: darkgray;
+        width:330px;
+        height:35px;
+        border-radius:50px;
+        border:1px solid lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <button onclick="dark()" class="bt">darkmode</button>
+    <button onclick="light()" class="l">lightmode</button>
+    <button onclick="has()" class="b">middle</button>
+   
+   <br><br>
+    <div class="iv">
+      <div class="di">
+     <h3>Assalamu alaikum, Barka da zuwa wannan website din nawa </h3>
+     <p>My name is:</p>
+      <h1>Imam Hassan Adamu</h1>
+      <h2>I am programmer</h2>
+     </div>
+    </div>
+    
+</center>
+    
+    
+    
+    <script>
+     function dark() {
+       document.body.classList.add("dark")
+       
+     } 
+     function light() {
+       document.body.classList.remove("dark", "has")
+     }
+     function has() {
+       document.body.classList.add("has")
+     }
+
+    </script>
+  </body>
+</html>
